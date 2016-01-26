@@ -34,45 +34,27 @@
 	</p>
 
 <h3>Projects</h3>
-		<a href = "http://dylanguidry95.github.io/BoidsUnity/" target="_blank"><img src = "Images/BOIDS.PNG" alt "BOIDS" height="150px" width="240px">BOID Algorithm</a>
-		<a href = "http://dylanguidry95.github.io/Physics/" target="_blank"><img src = "Images/CLOTH.PNG" alt "CLOTH" height="150px" width="240px">Cloth Simulation</a><br>
-		<a href = "http://chuwilliamson.github.io/Unity-Prototyping/" target="_blank"><img src = "Images/Artist.PNG" alt "ARTIST" height="150px" width="240px">Model Viewer</a><br>
+		<a href = "http://dylanguidry95.github.io/BoidsUnity/" target="_blank"><img src = "Images/BOIDS.PNG" alt "BOIDS" style = "float:left; width:240px; height:150px">BOID Algorithm</a>
+		<a href = "http://dylanguidry95.github.io/Physics/" target="_blank"><img src = "Images/CLOTH.PNG" alt "CLOTH" style = "margin-left:10px; width:240px; height:150px">Cloth Simulation</a><br>
+		<a href = "http://chuwilliamson.github.io/Unity-Prototyping/" target="_blank"><img src = "Images/Artist.PNG" alt "ARTIST" style = "float:left; width:240px; height:150px" >Model Viewer</a>
+		<a href = "http://dylanguidry95.github.io/NetworkingPractice/" target "_blank"><img src = "Images/Netowrk.PNG" alt "NETWORK" style = "margin-left:25px; width:240px; height:150px">Unity Networking</a></br>
 				
 <h3> Project Tutorials (Comming Soon) </h3>
 		
 <h3>Developing an Application</h3>
 	<p>
-		<font size = "5px"><b><i>BOIDS Algorithm</i></b></font><br>
-		The applicaton where I implemented the BOIDS Algorithm using the Unity Engine to show off my work 
-		was the first assessment I had to start of my second year at AIE. It was the no easy tasks. It was my
-		first time seeing and trying to solve any of the three rules of BOIDS. Once I had worked alot of sample
-		problems on my own and with my class, the equations where becoming more and more clear the more I practiced.<br>
+		<font size = "5px"><b><i>Unity Networking</i></b></font><br>
+		The Unity Networking application was an excersise for my Game Programming class at AIE. The excersise was to create a multiplayer 
+		application that can be played from a web browser. The original requirements wanted it the application to be built using WebGL, but
+		my class mates and I quickly found out that the networking tools Unity provides does not work with WebGL builds at the time of development.<br>
 		<br>
-		When I had finally began to implement the algorithm in Unity using c# there were a few issues I had encountered. 
-		Some of these problems where the boids behaving correctly at spawn but as soon as a value was changed it would 
-		break. I found out after testing multiple cases that my coeficients to modify the values where being calculated 
-		out of order.<br>
+		I took it apon my self with my partner Eric to dive into the Unity documentation and look up as much information as I could to find out how 
+		to achive the goal of having a networked game in a browser. After a couple of days of development we eventually got a game to work with a server being
+		hosted by any one running the standalone client and anyone running any version of the game can connect to this server and play with each other. This was 
+		achived by using the Network class Unity has but we could not find a way to get the build to work in WebGL due to the time constraints. We instead just built
+		it using the web player. <br>
 		<br>
-		The biggest problem I had encountered was with GitHub. When versioning I had forgot to push some important files up 
-		to the website. Then when I got home and began working I had some conflicts with the repository and had to redo a some 
-		key parts of the applicaton.<br>
-		<br>
-		To see the final product you can click on the image of the BOIDS Algorithm above or you can <a href = "http://dylanguidry95.github.io/BoidsUnity/" target="_blank">click here</a>. <br>
-		<br>
-		<br>
-		<font size = "5px"><b><i>Cloth Simulation</i></b></font><br>
-		Cloth Simulation was a really fun project for me becuase it originally started with me trying to make a chain 
-		for a game I was working on for school and I couldn't figure it out on my own. After the I couldn't get the chain 
-		We as a class began the Physics assessment where a lot of my confusion on how to break down the various algorithms 
-		used to create a cloth like simulation in Unity. <br>
-		<br>
-		I would say the hardest problems I had with this project was the cursor and generating new cloth at runtime. The 
-		cursor problem was difficult becuase one of the goals of the project was to not use any colliders unity would provide 
-		so I couldn't use the simple raycast functions I would normally use to solve a problem like this. So what I did was create 
-		a new object and use it represent the cursor in world space and move it relative to the cursor. The cloth at runtime was me 
-		making a really bad mistake and not newing list and clearing list properly to create the new objects that make up the cloth. <br>
-		<br>
-		To see the final product you can click on the image of the Cloth Simulation above or you can <a href = "http://dylanguidry95.github.io/Physics/" target="_blank">click here</a>. <br>
+		To see the final product you can click on the image of the Cloth Simulation above or you can <a href = "http://dylanguidry95.github.io/NetworkingPractice/"" target="_blank">click here (Does not work in Chrome)</a>. <br> 
 		<br>
 		<br>
 		<font size = "5px"><b><i>Model Viewer</i></b></font><br>
@@ -92,6 +74,40 @@
 		<br>
 		To see the final product you can click on the image of the Cloth Simulation above or you can <a href = "http://chuwilliamson.github.io/Unity-Prototyping/" target="_blank">click here</a>. <br> <br>
 		My instructor's github hosts the project and I forked the repository from him <href = "https://github.com/chuwilliamson/Unity-Prototyping" target= "_blank"> here </a> <br> 
+		<br>
+		<br>
+		<font size = "5px"><b><i>Cloth Simulation</i></b></font><br>
+		Cloth Simulation was a really fun project for me becuase it originally started with me trying to make a chain 
+		for a game I was working on for school and I couldn't figure it out on my own. After the I couldn't get the chain 
+		We as a class began the Physics assessment where a lot of my confusion on how to break down the various algorithms 
+		used to create a cloth like simulation in Unity. <br>
+		<br>
+		I would say the hardest problems I had with this project was the cursor and generating new cloth at runtime. The 
+		cursor problem was difficult becuase one of the goals of the project was to not use any colliders unity would provide 
+		so I couldn't use the simple raycast functions I would normally use to solve a problem like this. So what I did was create 
+		a new object and use it represent the cursor in world space and move it relative to the cursor. The cloth at runtime was me 
+		making a really bad mistake and not newing list and clearing list properly to create the new objects that make up the cloth. <br>
+		<br>
+		To see the final product you can click on the image of the Cloth Simulation above or you can <a href = "http://dylanguidry95.github.io/Physics/" target="_blank">click here</a>. <br>
+		<br>
+		<br>
+		<font size = "5px"><b><i>BOIDS Algorithm</i></b></font><br>
+		The applicaton where I implemented the BOIDS Algorithm using the Unity Engine to show off my work 
+		was the first assessment I had to start of my second year at AIE. It was the no easy tasks. It was my
+		first time seeing and trying to solve any of the three rules of BOIDS. Once I had worked alot of sample
+		problems on my own and with my class, the equations where becoming more and more clear the more I practiced.<br>
+		<br>
+		When I had finally began to implement the algorithm in Unity using c# there were a few issues I had encountered. 
+		Some of these problems where the boids behaving correctly at spawn but as soon as a value was changed it would 
+		break. I found out after testing multiple cases that my coeficients to modify the values where being calculated 
+		out of order.<br>
+		<br>
+		The biggest problem I had encountered was with GitHub. When versioning I had forgot to push some important files up 
+		to the website. Then when I got home and began working I had some conflicts with the repository and had to redo a some 
+		key parts of the applicaton.<br>
+		<br>
+		To see the final product you can click on the image of the BOIDS Algorithm above or you can <a href = "http://dylanguidry95.github.io/BoidsUnity/" target="_blank">click here</a>. <br>
+		<br>
 	</p>
   
 	</section>
