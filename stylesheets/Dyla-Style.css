@@ -1,0 +1,99 @@
+body
+{
+	background-color: #0033cc;
+}
+
+h1
+{
+	padding: 5px;
+	margin: 10px;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	line-height: 1.5;
+	border: 5px;
+	border-color: black;
+	border-style: dotted solid dashed;
+	text-align: center;
+	box-shadow: 10px 10px 5px #888888;
+	background-color: red;
+	border-bottom-left-radius: 7em;
+	border-top-right-radius: 7em;
+	border-bottom-right-radius: 2em;
+    border-top-left-radius: 2em;
+
+}
+
+#Menu
+{
+	padding: 10px 0px 0px 0px;
+	margin:auto;
+	height: 150px;
+	width: 250px;
+	float: left;
+}
+
+#Menu div
+{
+	height: 100px;
+	width: 260px;
+	border: 2px solid black;
+	border-top-right-radius: 7em;
+	border-bottom-right-radius: 2em;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#Catagory
+{
+	margin: auto;
+	width:600px;
+
+    padding:10px 10px 10px 100px;	
+}
+
+#Catagory div
+{
+	text-align: center;
+	border: 2px solid black;
+	border-top-right-radius: 7em;
+	border-top-left-radius: 7em;
+	border-bottom-right-radius: 2em;
+	border-bottom-left-radius: 2em;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+div.Project
+{
+	width: 300px;
+	height: 240px;
+	transition-property: height, width;
+	-webkit-transition-property: height, width; /* Safari 3.1 to 6.0 */
+	transition-duration: 2s;
+	-webkit-transition-duration: 2s;
+	background: red;
+	border: 5px solid black;
+	border-bottom-left-radius: 4em;
+	border-top-right-radius: 4em;
+	border-bottom-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+div.Project:hover
+{
+	height: 500px;
+	width: 500px;
+}
+
+p.normal
+{
+	font-style: normal;
+}
+
+p.italic
+{
+	font-style: italic;
+}
+
+p.oblique
+{
+	font-style: oblique;
+}
