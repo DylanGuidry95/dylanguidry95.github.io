@@ -1,10 +1,11 @@
 body
 {
-	background-color: #0033cc;
+	background-image: url("http://illogictree.com/wp-content/uploads/2010/09/perlin.png");
 }
-
-h1
+/*Title of the current webpage loaded*/
+#Title
 {
+	height: 100px;
 	padding: 5px;
 	margin: 10px;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -15,14 +16,13 @@ h1
 	border-style: dotted solid dashed;
 	text-align: center;
 	box-shadow: 10px 10px 5px #888888;
-	background-color: red;
+	background-color: #ff9933;
 	border-bottom-left-radius: 7em;
 	border-top-right-radius: 7em;
 	border-bottom-right-radius: 2em;
     border-top-left-radius: 2em;
-
 }
-
+/*Menu of items displayed on the left side of the window*/
 #Menu
 {
 	padding: 10px 0px 0px 0px;
@@ -31,10 +31,9 @@ h1
 	width: 250px;
 	float: left;
 }
-
+/*Structure used to format divs inside of out menu items*/
 #Menu div
 {
-	height: 100px;
 	width: 260px;
 	border: 2px solid black;
 	border-top-right-radius: 7em;
@@ -42,14 +41,39 @@ h1
 	box-shadow: 10px 10px 5px #888888;
 }
 
+/*Items displayed on the right side of the window I will use to store my daily logs*/
+#Working
+{
+	padding: 10px 10px 10px 10px;
+	margin:auto;
+	height: 150px;
+	width: 500px;
+	float: right;
+	text-align:left;
+}
+
+/*Structure used to format divs inside of out working items*/
+#Working div
+{
+	width: 500px;
+	border: 2px solid black;
+	border-top-left-radius: 7em;
+	border-bottom-left-radius: 2em;
+	box-shadow: 10px 10px 5px #888888;
+	text-align:center;
+	padding:5px;
+}
+
+/*Structure we use to organize the material inside the different catagories of
+the webpage*/
 #Catagory
 {
 	margin: auto;
 	width:600px;
-
-    padding:10px 10px 10px 100px;	
+    padding:10px 100px 10px 100px;	
 }
 
+/*Structure used to format divs inside of out Catagory items*/
 #Catagory div
 {
 	text-align: center;
@@ -59,41 +83,24 @@ h1
 	border-bottom-right-radius: 2em;
 	border-bottom-left-radius: 2em;
 	box-shadow: 10px 10px 5px #888888;
+	padding:10px;
 }
 
-div.Project
+.ImageDescriptions
 {
-	width: 300px;
-	height: 240px;
-	transition-property: height, width;
-	-webkit-transition-property: height, width; /* Safari 3.1 to 6.0 */
-	transition-duration: 2s;
-	-webkit-transition-duration: 2s;
-	background: red;
-	border: 5px solid black;
-	border-bottom-left-radius: 4em;
-	border-top-right-radius: 4em;
-	border-bottom-right-radius: 2em;
-    border-top-left-radius: 2em;
+	background-color: #ff9966;
+	border-radius:1em;
+	border:2px solid black;
+	padding:5px;
+	margin:auto;
+	transition-property: width;
+	transition-duration:1s;
+	-webkit-transition-property:width;
+	-webkit-transition-duration:1s;
+	
 }
 
-div.Project:hover
+.ImageDescriptions:hoover
 {
-	height: 500px;
-	width: 500px;
-}
-
-p.normal
-{
-	font-style: normal;
-}
-
-p.italic
-{
-	font-style: italic;
-}
-
-p.oblique
-{
-	font-style: oblique;
+	width:500px;
 }
