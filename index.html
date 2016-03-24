@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/Dyla-Style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/Dylan-Style.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/Dylan-Style.css" media="screen">
   </head>
 <body>
@@ -15,9 +15,6 @@
 			Dylan Guidry<br>
 			Software Developer<br></u></b></font>
 	</div>
-	<audio controls loop autoplay>
-		<source src="Audio/Pegboard Nerds - Bassline Kickin [Monstercat Release].mp3" type="audio/mp3">
-	</audio>
 	<div id="Menu">
 		<div style="background-color:#ffcc99;" >
 			<font size="4px"><b><u>Contact Information</u></b></font><br>
@@ -38,7 +35,54 @@
 			Comming Soon
 		</div>
 	</div>
+<script>
+var currentAudio = "";
+function playFile(button)
+{
+	var Button = document.getElementById("play");
+	var AudioPlayer = document.getElementById("myAudio");
 	
+	if(currentAudio != button.value)
+	{
+		currentAudio = button.value;
+		AudioPlayer.src = button.value;
+	}
+	
+	if(AudioPlayer.paused)
+	{
+		AudioPlayer.play();
+		Button.text = "Paused";
+	}
+	else
+	{
+		AudioPlayer.pause();
+		Button.text = "Player";
+	}
+}
+
+function pausePlay()
+{
+	var Button = document.getElementById("play");
+	var AudioPlayer = document.getElementById("myAudio");
+	
+	if(AudioPlayer.paused)
+	{
+		AudioPlayer.play();
+		Button.text = "Paused";
+	}
+	else
+	{
+		AudioPlayer.pause();
+		Button.text = "Player";
+	}
+}
+</script>
+	<div id = "AudioPlaylist">
+		<audio id="myAudio" style="width:25%" >Canvas Not supported</audio>
+		<button id="play" onclick="pausePlay();">Play</button>
+		<button name="Track1" size="80" onclick="playFile(this)" value="Audio/Game-Over-Shane.mp3">Song: Game Over Shane Artist: Popsky</button>
+		<button name="Track2" size="80" onclick="playFile(this)" value="Audio/Bassline Kickin.mp3">Song: Bassline Kickin Artist: Pegboard Nerds</button>
+	</div>
 	<div id="Working">
 		<div style="background-color:#ffcc99;">
 			<font size="4px"><b><u>What's Going On</u></b></font><br>

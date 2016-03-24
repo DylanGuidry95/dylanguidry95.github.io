@@ -86,6 +86,25 @@ the webpage*/
 	padding:10px;
 }
 
+#AudioPlaylist
+{
+	margin:auto;
+	padding:25px;
+	background-color:red;
+	border: 2px solid black;
+	border-radius:1em;
+	box-shadow: 10px 10px 5px #888888;
+	float: left;
+}
+
+#AudioPlaylist div
+{
+	float: left;
+	border:1px solid black;
+	color: white;
+	height:25px;
+}
+
 .ImageDescriptions
 {
 	background-color: #ff9966;
