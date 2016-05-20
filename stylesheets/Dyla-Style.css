@@ -28,13 +28,11 @@ body
 	padding: 10px 0px 0px 0px;
 	margin:auto;
 	height: 150px;
-	width: 250px;
 	float: left;
 }
 /*Structure used to format divs inside of out menu items*/
 #Menu div
 {
-	width: 260px;
 	border: 2px solid black;
 	border-top-right-radius: 7em;
 	border-bottom-right-radius: 2em;
@@ -47,7 +45,6 @@ body
 	padding: 10px 10px 10px 10px;
 	margin:auto;
 	height: 150px;
-	width: 500px;
 	float: right;
 	text-align:left;
 }
@@ -55,7 +52,6 @@ body
 /*Structure used to format divs inside of out working items*/
 #Working div
 {
-	width: 500px;
 	border: 2px solid black;
 	border-top-left-radius: 7em;
 	border-bottom-left-radius: 2em;
@@ -69,7 +65,6 @@ the webpage*/
 #Catagory
 {
 	margin: auto;
-	width:600px;
     padding:10px 100px 10px 100px;	
 }
 
@@ -102,5 +97,5 @@ the webpage*/
 
 .ImageDescriptions:hoover
 {
-	width:500px;
+
 }
